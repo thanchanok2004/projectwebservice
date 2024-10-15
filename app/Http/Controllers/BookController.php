@@ -10,7 +10,7 @@ class BookController extends Controller
     // ฟังก์ชันสำหรับดึงข้อมูลหนังสือทั้งหมด
     public function index()
     {
-        $books = Book::all();
+        $books = Book::paginate(5);
         return response()->json($books, 200);
     }
 

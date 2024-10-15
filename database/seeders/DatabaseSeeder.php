@@ -16,10 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-            // CountrySeeder::class,
-            // regionSeeder::class,
-            // ProvincesSeeder::class,
-            // TitleSeeder::class,
+            
         ]);
         \App\Models\User::factory(100)->create();
         \App\Models\Book::factory()->count(200)->create();
